@@ -20,6 +20,10 @@ cd /path/to/dir/jupyter
 docker-compose start
 ```
 
+## Access jupyter
+
+Please access `http://localhost:9876` from your browser.
+
 ## Stop jupyter
 
 ``` shell
