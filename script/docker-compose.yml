@@ -1,4 +1,4 @@
-version: "3"
+version: "2.4"
 services:
   kaggle-script:
     container_name: 'kaggle-script'
