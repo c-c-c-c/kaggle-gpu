@@ -2,8 +2,7 @@ version: "3"
 services:
   kaggle-jupyter:
     container_name: 'kaggle-jupyter'
-    image: 'kaggle-gpu:v0.1-36'
-    #image: 'okojoalg/kaggle-gpu:v0.1-36'
+    image: 'okojoalg/kaggle-gpu:v0.1-36'
     volumes:
       - $PWD:/mount
     working_dir: /mount
