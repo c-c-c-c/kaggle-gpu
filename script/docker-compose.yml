@@ -4,6 +4,6 @@ services:
     container_name: 'kaggle-script'
     image: 'okojoalg/kaggle-gpu:v0.1-36'
     volumes:
-      - $PWD:/mount
-    working_dir: /mount
-    command: python /mount/run.py
+      - $PWD:/home
+    working_dir: /home
+    command: python /home/run.py

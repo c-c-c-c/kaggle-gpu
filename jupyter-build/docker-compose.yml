@@ -4,8 +4,8 @@ services:
     container_name: 'kaggle-jupyter'
     build: ..
     volumes:
-      - $PWD:/mount
-    working_dir: /mount
+      - $PWD:/home
+    working_dir: /home
     ports:
       - 9876:8080
     command: jupyter notebook --ip=0.0.0.0 --allow-root --no-browser
