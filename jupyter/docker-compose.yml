@@ -2,7 +2,7 @@ version: "2.4"
 services:
   kaggle-jupyter:
     container_name: 'kaggle-jupyter'
-    image: 'okojoalg/kaggle-gpu:v0.2-36'
+    image: 'okojoalg/kaggle-gpu:v0.3-36'
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
