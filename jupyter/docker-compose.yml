@@ -2,13 +2,14 @@ version: "2.4"
 services:
   kaggle-jupyter:
     container_name: 'kaggle-jupyter'
-    image: 'okojoalg/kaggle-gpu:v0.3-36'
+    image: 'okojoalg/kaggle-gpu:v0.4-37'
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
     volumes:
       - $PWD:/home
+      - $PWD/share:/opt/conda/share/jupyter/lab
     working_dir: /home
     ports:
       - 9876:8080
-    command: jupyter notebook --ip=0.0.0.0 --allow-root --no-browser
+    command: jupyter lab --ip=0.0.0.0 --allow-root --no-browser
